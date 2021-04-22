@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 940px;
+  height: 340px;
+  position: relative;
+  left: 490px;
+}
+
+.container .cover img {
+  z-index: 1;
+  position: absolute;
+  width: 940px;
+  height: 340px;
+  border-radius: 10px;
+}
+
+.container .profile img {
+  z-index: 10;
+  position: absolute;
+  width: 176px;
+  height: 176px;
+  border-radius: 50%;
+  left: 386px;
+  bottom: -10px;
+  justify-self: center;
+  border: black 3px solid;
+}
+
+.container .box a {
+  z-index: 10;
+  position: absolute;
+  padding: 2px 12px;
+  right: 20px;
+  bottom: 20px;
+  border: white 5px solid;
+  background-color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container h1 {
+  z-index: 1000;
+  position: relative;
+  left: 10px;
+  font-weight: bold;
+  text-align: center;
+  top: 355px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container .camera_icon img {
+  z-index: 10;
+  height: 40px;
+  width: 40px;
+  border-radius: 60%;
+  background-color: blue;
+  position: absolute;
+  left: 55%;
+  bottom: 0%;
+}
+
+.container .box i {
+  height: 10px;
+  width: 10px;
+  padding-right: 10px;
+}
+
+.container .camera_icon img:hover {
+  opacity: 0.9;
+}
+
+.container .box a:hover {
+  opacity: 0.9;
+}
+
+.container .profile img:hover {
+  opacity: 0.95;
+}
