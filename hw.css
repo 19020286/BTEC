@@ -1,0 +1,68 @@
+.b1 {
+  position: relative;
+  left: 20px;
+  top: 20px;
+}
+
+.b2 {
+  position: relative;
+  left: 1450px;
+  top: 0px;
+}
+
+.b3 {
+  position: relative;
+  left: 20px;
+  top: 800px;
+}
+
+.b4 {
+  position: relative;
+  left: 1450px;
+  top: 800px;
+}
+
+.b1 #block1 {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  background-color: darkgoldenrod;
+  text-align: center;
+}
+
+.b2 #block2 {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  background-color: aqua;
+  text-align: center;
+}
+
+.b3 #block3a {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  background-color: darksalmon;
+}
+
+.b3 #block3b {
+  position: absolute;
+  top: 350px;
+  height: 300px;
+  width: 300px;
+  background-color: greenyellow;
+}
+
+.b4 #block4 {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  font-size: 14px;
+  background-color: lightskyblue;
+}
+
+.button {
+  position: absolute;
+  left: 55px;
+  top: 0px;
+}
