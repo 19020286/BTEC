@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coolmate</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script src="https://kit.fontawesome.com/de3f66767a.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="site-content">
+      <div class="container-fluid pt-3">
+        <div class="breadcrumb">
+          <ul class="breadcrumb-list">
+            <li>
+              <a style="text-decoration: none; color: orange" href="#" class="breadcrumb-item">Trang chủ</a>
+            </li>
+            <li>
+              <a href="#" class="breadcrumb-item">Quần Short Nam</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Product -->
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <img id="mag-image" src="./ảnh/magni-photo-1a.jpg" alt="" width="100%">
+              <div class="row">
+                <div class="col">
+                  <img onclick="setMagImg()" class="min-image" style="display: block; margin-left: auto; margin-right: auto; margin-top:30px;" src="./ảnh/magni-photo-1a.jpg" alt="" width="65">
+                </div>
+                <div class="col">
+                  <img onclick="setMagImg()" class="min-image" style="display: block; margin-left: auto; margin-right: auto; margin-top:30px;" src="./ảnh/magni-photo-2a.jpg" alt="" width="65">
+                </div>
+                <div class="col">
+                  <img onclick="setMagImg()" class="min-image" style="display: block; margin-left: auto; margin-right: auto; margin-top:30px;" src="./ảnh/magni-photo-3a.jpg" alt="" width="65">
+                </div>
+                <div class="col">
+                  <img onclick="setMagImg()" class="min-image" style="display: block; margin-left: auto; margin-right: auto; margin-top:30px;" src="./ảnh/magni-photo-4a.jpg" alt="" width="65">
+                </div>
+                <div class="col">
+                  <img onclick="setMagImg()" class="min-image" style="display: block; margin-left: auto; margin-right: auto; margin-top:30px;" src="./ảnh/magni-photo-5a.jpg" alt="" width="65">
+                </div>
+                <div class="col">
+                  <img onclick="setMagImg()" class="min-image" style="display: block; margin-left: auto; margin-right: auto; margin-top:30px;" src="./ảnh/magni-photo-6a.jpg" alt="" width="65">
+                </div>
+
+              </div>
+            </div>
+            <div class="col-6">
+              <p id="title">Quần thể thao nam Quick-dry Active - mặc là mát<p>
+                <div class="rating">
+                  <p style="font-size: 12px; color: orange; font-weight: 700;">Đánh giá: 4.5/5
+                    <i style="color:orange" class="fas fa-star"></i>
+                    <i style="color:orange" class="fas fa-star"></i>
+                    <i style="color:orange" class="fas fa-star"></i>
+                    <i style="color:orange" class="fas fa-star"></i>
+                    <i style="color:orange" class="fas fa-star-half-alt"></i>
+                  </p>
+                </div>
+                <div class="product-price">189.000₫</div>
+                
+                <!-- Set-color -->
+                <div class="color-picker">
+                  <span>Màu sắc: </span>
+                  <span id="color">Xanh Aqua</span>
+                  <div class="color">
+                    <div class="row">
+                      <div class="col-2">
+                        <img class="choose-color" onclick="setBlueColor()" src="./ảnh/magni-photo-1a.jpg" alt="" width="125%">
+                      </div>
+                      <div class="col-2">
+                        <img class="choose-color"  onclick="setBlackColor()" src="./ảnh/magni-photo-1b.jpg" alt="" width="125%">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Set-size -->
+                <div class="size-picker">
+                  <span>Kích thước quần: </span>
+                  <span id="size">M</span>
+                  <span id="size-desc">(1m60 - 1m64, 51kg - 60kg)</span>
+                  <div class="size">
+                    <span class="choose-size" onclick="setMSize()">M</span>
+                    <span class="choose-size" onclick="setLSize()">L</span>
+                    <span class="choose-size" onclick="setXLSize()">XL</span>
+                    <span class="choose-size" onclick="set2XLSize()">2XL</span>
+                  </div>
+                </div>
+
+                <div class=quantity>
+                  <span class="label">Chọn số lượng: </span>
+                  <div class="number-input">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+                    <input class="quantity" min="0" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                  </div>
+                </div>
+                
+                <div class="purchase-button">
+                  <a href="">
+                    <span>Mua </span>
+                    <span id="color1">Xanh Aqua</span>
+                    <span>/</span>
+                    <span id="size1">M</span>
+                  </a>
+                </div>
+
+                <div class="row">
+                  <div class="policy-item">
+                      <a href="#">Hotline </a>
+                      <a href="tel: 1900272737" class="text--primary" style="font-weight: bold">1900.27.27.37</a>
+                      hỗ trợ từ 8h30 - 22h mỗi ngày
+                  </div>
+                  <div class="policy-item">
+                      <a href="#">Miễn phí vận chuyển <b class="text--primary">Cho đơn hàng trên 300k</b></a>
+                  </div>
+                  <div class="policy-item">
+                    <a href="#">
+                      <b class="text--primary">60 ngày</b> đổi trả vì bất kỳ lý do gì
+                    </a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="policy-item">
+                    <a href="#">
+                      Giao hàng <b class="text--primary">24h</b> ở HN &amp; HCM 2-3 ngày ở tỉnh khác
+                    </a>
+                  </div>
+                  <div class="policy-item">
+                    <a href="#">
+                      Đến <b class="text--primary">tận nơi</b> nhận hàng trả, hoàn tiền trong <b class="text--primary">24h</b>
+                    </a>
+                  </div>
+                  <div class="policy-item">
+                    <a href="#">
+                      Đổi trả <b class="text--primary">cực dễ</b> chỉ cần số điện thoại
+                    </a>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div><hr></div>
+
+        <!-- Description-content -->
+        <div class="grid">
+          <div>
+            <h2>Mô tả chi tiết</h3>
+          </div>
+          <div class="description-content">
+              <p>Quần Short thể thao luôn là sản phẩm ấn tượng và được cải tiến liên tục để đem đến cho khách hàng trải nghiệm tốt nhất. &nbsp;<strong>Quick-dry Active</strong>&nbsp là chiếc quần phù hợp&nbsp;trong các hoạt động rèn luyện sức khỏe như chạy bộ, gym, đánh cầu lông... Hoặc có thể sử dụng tại nhà như một chiếc quần ngủ đơn giản. Chiếc quần tập trung chủ yếu mang lại sự thoải mái nhất cho người mặc. Đặc biệt vào những khi thời tiết nắng nóng, oi bức, khó chịu đây sẽ là giải pháp tuyệt vời để có những phút giây thực sự thư giãn và dễ chịu và&nbsp;<strong>Quick-dry Active</strong>&nbsp;chính là chiếc quần bạn đang tìm đây rồi!&nbsp;</p>
+            <p><a style="text-decoration: none; color: orange" href="https://coolmate.me/"><strong>Coolmate</strong></a>&nbsp;đã nghiên cứu và cho mắt sản phẩm&nbsp;<strong>Quần thể thao Quick-dry Active</strong> với quá trình lắng nghe khách hàng để tạo ra sản phẩm tuyệt vời nhất!&nbsp;</p>
+            <img style="display: block; margin-left: auto; margin-right: auto;" src="./ảnh/desc-photo-1.jpg" alt="" width="1000">
+            <h3>Đặc điểm chỉ có ở quần Quick-dry Active Short <a style="text-decoration: none; color: orange" href="https://coolmate.me/">Coolmate</a></h3>
+            <img style="display: block; margin-left: auto; margin-right: auto;" src="./ảnh/desc-photo-2.jpg" alt="" width="1000">
+            <h3><strong>Màu xanh aqua cùng màu ghi đen nam tính để bạn luôn ngầu trong mọi vận động!&nbsp;</strong></h3>
+            
+            <!-- Description-image -->
+            <div class="description-image">
+              <div class="row">
+                <div class="col">
+                  <img style="display: block; margin-left: auto; margin-right: auto;" src="./ảnh/desc-photo-3a.jpg" alt="" width="550">
+                </div>
+                <div class="col">
+                  <img style="display: block; margin-left: auto; margin-right: auto;" src="./ảnh/desc-photo-3b.jpg" alt="" width="550">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <img style="display: block; margin-left: auto; margin-right: auto; margin-top:30px;" src="./ảnh/desc-photo-5.jpg" alt="" width="550">
+                </div>
+                <div class="col">
+                  <img style="display: block; margin-left: auto; margin-right: auto; margin-top:30px;" src="./ảnh/desc-photo-4.jpg" alt="" width="550">
+                </div>
+              </div>
+            </div>
+
+            <!-- Info box -->
+            <div class="info-box"><p></p>
+              <p><strong>Vài điều Coolmate mách bạn để tránh những sai lầm không nên có:</strong></p>
+              <ul>
+              <li>Phối màu trắng đen là hiệu quá nhất đối với một bộ đồ thể thao. Điều này giúp bạn trông nhiều năng lượng và cực kỳ tươi trẻ.</li>
+              <li>Không nên sử dụng áo có quá nhiều họa tiết kết hợp cùng quần ngắn thể thao nam. Sự rườm rà không đáng có sẽ khiến bạn kém tự tim đi rất nhiều.</li>
+              <li>Hãy thử mua thêm vài đôi tất thể thao chuyên dụng để có thêm sự thoải mái trong quá trình luyện tập</li>
+              <li>Và đừng quên sự thoải mái cũng chính là điều quan trọng nhất đối với một bộ đồ thể thao. Cho nên hãy luôn ưu tiên điều này.</li>
+              </ul>
+              <p>&nbsp;</p>
+            </div>
+            <div>
+              <p><strong>Tự hào sản xuất tại Việt Nam.</strong></p>
+            </div>
+            <div>
+              <p>Ghé <a style="text-decoration: none; color: orange"  href="https://coolmate.me/"><strong>Coolmate</strong></a> để không bỏ lỡ sản phẩm này nhé!</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
